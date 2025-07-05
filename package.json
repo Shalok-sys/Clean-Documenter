@@ -6,6 +6,7 @@
     "url": "https://github.com/Shalok-sys/Clean-Documenter.git"
   },
   "displayName": "Clean Documenter",
+  "icon": "icon.png",
   "description": "This extension allows you to clean your documentation by autocorrecting your mistakes in the code.",
   "version": "0.0.1",
   "engines": {
