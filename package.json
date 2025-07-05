@@ -1,0 +1,50 @@
+{
+  "name": "clean-documenter",
+  "publisher": "Shalok Sharma",
+  "displayName": "Clean Documenter",
+  "description": "This extension allows you to clean your documentation by autocorrecting your mistakes in the code.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "clean-documenter.highlightMisspellings",
+        "title": "Highlight Spelling Mistakes"
+      },
+      {
+        "command": "clean-documenter.autoCorrectComments",
+        "title": "Auto Correct Spelling Mistakes"
+      },
+      {
+        "command": "clean-documenter.clearDiagnostic",
+        "title": "Clear Spelling Diagnostic"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.101.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "dictionary-en": "^4.0.0",
+    "nspell": "^2.1.5",
+    "simple-spellchecker": "^1.0.2",
+    "typo-js": "^1.2.5"
+  }
+}
